@@ -160,7 +160,7 @@ nvim
 ---
 
 ## 🎨 Temas y UI
-=======
+
 | Acción          | Tecla           |
 | --------------- | --------------- |
 | Buffers (Bento) | ;               |
