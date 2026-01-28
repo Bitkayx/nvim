@@ -20,7 +20,6 @@ Configuración de Neovim optimizada para desarrollo full-stack con experiencia d
 ### Instalación de dependencias
 
 ```bash
-<<<<<<< HEAD
 # Ubuntu/Debian
 sudo apt install nodejs npm ripgrep fd-find curl
 
@@ -118,9 +117,7 @@ mv ~/.config/nvim ~/.config/nvim.backup
 git clone https://github.com/Bitkayx/nvim ~/.config/nvim
 
 # Iniciar Neovim (instalará plugins automáticamente)
-=======
 git clone https://github.com/Bitkayx/nvim ~/.config/nvim
->>>>>>> 48b42b25804460396064dd74b17f2a0e56d6cd07
 nvim
 ```
 
@@ -162,7 +159,6 @@ nvim
 
 ---
 
-<<<<<<< HEAD
 ## 🎨 Temas y UI
 =======
 | Acción          | Tecla           |
@@ -174,7 +170,6 @@ nvim
 | Buscar plugins  | <leader> fp     |
 | Terminal        | <leader> ft     |
 | Opencode        | <leader> o      |
->>>>>>> 48b42b25804460396064dd74b17f2a0e56d6cd07
 
 ### Colorescheme Principal
 
