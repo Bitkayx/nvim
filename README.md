@@ -125,6 +125,31 @@ nvim
 
 ---
 
+## Dependencias Específicas
+
+### Python Development
+```bash
+# Instalar Python y herramientas
+sudo apt install python3 python3-pip
+pip install black pylint mypy  # Formateo y linting
+
+# O con uv (recomendado)
+pip install uv
+uv add black pylint mypy --dev
+```
+
+### SQL Development
+```bash
+# SQL Server (opcional)
+sudo apt install sqls  # SQL Language Server
+```
+
+### Tailwind CSS (configurado automáticamente)
+- Los proyectos con `tailwind.config.js` tendrán LSP automático
+- Soporte para clases y autocompletado
+
+---
+
 ## 📁 Estructura del Proyecto
 
 ```
@@ -159,31 +184,12 @@ nvim
 
 ---
 
-## 🎨 Temas y UI
-
-| Acción          | Tecla           |
-| --------------- | --------------- |
-| Buffers (Bento) | ;               |
-| Ultimo buffer   | ;;              |
-| Toggle Bento    | <leader> bt     |
-| Buscar archivos | <leader> ff     |
-| Buscar plugins  | <leader> fp     |
-| Terminal        | <leader> ft     |
-| Opencode        | <leader> o      |
+## 🎨 Temas
 
 ### Colorescheme Principal
 
 - **Neovim**: Teide Darker (dark theme)
 - **Terminal**: Catppuccin (recomendado WezTerm)
-
-### UI Features
-
-- **Bento.nvim**: Buffer manager estilo Reddit
-- **Lualine**: Status line minimalista
-- **Incline**: Contexto de función en top bar
-- **Bufferline**: Tabs de buffers
-- **Treesitter**: Resaltado de sintaxis avanzado
-- **True colors**: Soporte completo de colores
 
 ---
 
@@ -389,29 +395,6 @@ column_width = 120
 - **JSON/YAML**: Prettier
 
 Trigger: `<leader>cf` o al guardar (configurable)
-
-### Dependencias Específicas
-
-#### Python Development
-```bash
-# Instalar Python y herramientas
-sudo apt install python3 python3-pip
-pip install black pylint mypy  # Formateo y linting
-
-# O con uv (recomendado)
-pip install uv
-uv add black pylint mypy --dev
-```
-
-#### SQL Development
-```bash
-# SQL Server (opcional)
-sudo apt install sqls  # SQL Language Server
-```
-
-#### Tailwind CSS (configurado automáticamente)
-- Los proyectos con `tailwind.config.js` tendrán LSP automático
-- Soporte para clases y autocompletado
 
 ---
 
