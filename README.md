@@ -20,7 +20,7 @@ Configuración de Neovim enfocada en:
 ## Instalación
 
 ```bash
-git clone https://github.com/Bitkay/nvim ~/.config/nvim
+git clone https://github.com/Bitkayx/nvim ~/.config/nvim
 nvim
 ```
 
