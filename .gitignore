@@ -1,0 +1,7 @@
+# Lazy
+/lazy-lock.json
+/.neoconf.json
+
+# OS
+.DS_Store
+Thumbs.db
