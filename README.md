@@ -41,15 +41,15 @@ Lazy.nvim instalará todo automáticamente.
 
 Acción Tecla
 
-| Acción          | Tecla          |
-| --------------- | -------------- |
-| Buffers (Bento) | ;              |
-| Ultimo buffer   | ;;             |
-| Toggle Bento    | <leader>bt     |
-| Buscar archivos | <leader>ff     |
-| Buscar plugins  | <leader>fp     |
-| Terminal        | <leader>ft     |
-| Opencode        | <leader>o      |
+| Acción          | Tecla           |
+| --------------- | --------------- |
+| Buffers (Bento) | ;               |
+| Ultimo buffer   | ;;              |
+| Toggle Bento    | <leader> bt     |
+| Buscar archivos | <leader> ff     |
+| Buscar plugins  | <leader> fp     |
+| Terminal        | <leader> ft     |
+| Opencode        | <leader> o      |
 
 ## Temas
 
