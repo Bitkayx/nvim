@@ -3,8 +3,8 @@
 -- Add any additional keymaps here
 local map = vim.keymap.set
 
--- ToggleTerm flotante
-map({ "n", "t" }, "<leader>ft", function()
+-- ToggleTerm flotante (solo modo normal)
+map("n", "<leader>ft", function()
   require("toggleterm").toggle(1)
 end, { desc = "Toggle terminal (float)" })
 
@@ -28,3 +28,16 @@ vim.keymap.set("n", "<leader>bt", "<cmd>BentoToggle<CR>", {
 -- Moverse a mitad de pantalla
 vim.keymap.set("n", "<C-d>", "<C-d>zz")
 vim.keymap.set("n", "<C-u>", "<C-u>zz")
+
+-- Toggle Copilot
+vim.keymap.set("n", "<leader>uk", function()
+  local ok, copilot = pcall(require, "copilot")
+  if ok then
+    vim.cmd(copilot.enabled and "Copilot disable" or "Copilot enable")
+  else
+    vim.cmd("Copilot toggle")
+  end
+end, { desc = "Toggle Copilot" })
+
+-- LSP Rename
+vim.keymap.set("n", "<leader>cr", vim.lsp.buf.rename, { desc = "LSP Rename" })
