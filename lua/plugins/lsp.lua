@@ -1,13 +1,22 @@
 return {
-  {
-    "neovim/nvim-lspconfig",
-    opts = {
-      servers = {
-        tsserver = {},
-        eslint = {},
-        tailwindcss = {},
-        pyright = {},
-        sqls = {},
+  "neovim/nvim-lspconfig",
+  opts = {
+    servers = {
+      tsserver = {},
+      eslint = {},
+      pyright = {},
+      sqls = {},
+      tailwindcss = {
+        filetypes = {
+          "html",
+          "css",
+          "scss",
+          "javascript",
+          "javascriptreact",
+          "typescript",
+          "typescriptreact",
+          "astro",
+        },
       },
     },
   },

@@ -20,3 +20,10 @@ vim.api.nvim_create_autocmd("BufWritePre", {
     M.trim()
   end,
 })
+
+vim.api.nvim_create_autocmd("VimEnter", {
+  group = vim.api.nvim_create_augroup("CopilotOff", { clear = true }),
+  callback = function()
+    vim.cmd("silent! Copilot disable")
+  end,
+})

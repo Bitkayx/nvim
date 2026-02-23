@@ -42,11 +42,13 @@ OpenCode es un asistente de IA que integra directamente con tu configuración de
 ### Instalación rápida
 
 #### Método 1: Script automático (Recomendado)
+
 ```bash
 curl -fsSL https://opencode.ai/install | bash
 ```
 
 #### Método 2: npm/yarn/pnpm
+
 ```bash
 # npm
 npm install -g opencode-ai
@@ -62,11 +64,13 @@ bun install -g opencode-ai
 ```
 
 #### Método 3: Homebrew (macOS/Linux)
+
 ```bash
 brew install anomalyco/tap/opencode
 ```
 
 #### Método 4: Windows
+
 ```bash
 # Chocolatey
 choco install opencode
@@ -78,11 +82,13 @@ scoop install opencode
 ### Configuración inicial
 
 1. **Verificar instalación**:
+
    ```bash
    opencode --version
    ```
 
 2. **Configurar API key**:
+
    ```bash
    cd /path/to/project
    opencode
@@ -92,6 +98,7 @@ scoop install opencode
    ```
 
 3. **Inicializar proyecto**:
+
    ```bash
    # Dentro del directorio del proyecto
    /init
@@ -128,6 +135,7 @@ nvim
 ## Dependencias Específicas
 
 ### Python Development
+
 ```bash
 # Instalar Python y herramientas
 sudo apt install python3 python3-pip
@@ -139,12 +147,14 @@ uv add black pylint mypy --dev
 ```
 
 ### SQL Development
+
 ```bash
 # SQL Server (opcional)
 sudo apt install sqls  # SQL Language Server
 ```
 
 ### Tailwind CSS (configurado automáticamente)
+
 - Los proyectos con `tailwind.config.js` tendrán LSP automático
 - Soporte para clases y autocompletado
 
@@ -209,10 +219,9 @@ sudo apt install sqls  # SQL Language Server
 | Acción | Tecla | Descripción |
 |--------|-------|-------------|
 | **Buscar archivos** | `<leader>ff` | Find files (Telescope) |
-| **Buscar texto** | `<leader>fw` | Find word in project |
 | **Buscar plugins** | `<leader>fp` | Find plugins |
 | **Buscar reciente** | `<leader>fr` | Recent files |
-| **Live grep** | `<leader>sg` | Búsqueda global |
+| **Live grep** | `<leader>/` | Búsqueda global |
 
 ### Terminal y Herramientas
 
@@ -221,7 +230,23 @@ sudo apt install sqls  # SQL Language Server
 | **Terminal** | `<leader>ft` | Toggle terminal flotante |
 | **Salir terminal** | `<Esc>` (en modo terminal) | Volver a modo normal |
 | **OpenCode** | `<leader>o` | Toggle OpenCode AI |
+| **Copilot Chat** | `<leader>aa` | Toggle chat flotante |
 | **Redimensionar** | `Alt+Arrow keys` | Redimensionar splits |
+
+### Copilot Chat
+
+| Acción | Tecla | Descripción |
+|--------|-------|-------------|
+| **Toggle chat** | `<leader>aa` | Abrir/cerrar chat flotante |
+| **Quick chat** | `<leader>aq` | Chat rápido con input |
+| **Limpiar chat** | `<leader>ax` | Limpiar historial |
+| **Explicar código** | `<leader>ae` | Explicar código seleccionado |
+| **Revisar código** | `<leader>ar` | Revisar código seleccionado |
+| **Generar tests** | `<leader>at` | Generar tests del código |
+| Toogle Copilot | `<leader>uk` | Prende o Apaga Copilot |
+
+> **Nota**: Los atajos `<leader>ae`, `<leader>ar`, `<leader>at` funcionan en modo visual (selecciona el código primero).
+> **Nota**: Copilot Chat requiere autenticación con GitHub Copilot. Configura tu token con `:CopilotChatAuth`
 
 ### Navegación Avanzada
 
@@ -237,7 +262,7 @@ sudo apt install sqls  # SQL Language Server
 |--------|-------|-------------|
 | **Definición** | `gd` | Go to definition |
 | **Referencias** | `gr` | Find references |
-| **Rename** | `<leader>cr` | Rename symbol |
+| **Rename** | `<leader>cr` | Rename symbol/word |
 | **Format** | `<leader>cf` | Format code |
 | **Diagnostics** | `<leader>cd` | Show diagnostics |
 
@@ -299,12 +324,7 @@ sudo apt install sqls  # SQL Language Server
 
 ### Modificar Colorscheme
 
-Edita `lua/plugins/theme_teide.lua` o crea tu propio theme:
-
-```lua
--- Para cambiar a catppuccin
-vim.cmd.colorscheme("catppuccin-mocha")
-```
+Edita `lua/plugins/colorscheme.lua` y descomenta el tema. (No olvides lazy = true)
 
 ### Agregar Plugins
 
